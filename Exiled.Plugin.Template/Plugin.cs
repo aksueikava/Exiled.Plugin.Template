@@ -21,7 +21,7 @@ namespace Exiled.Plugin.Template
             Instance = this;
             RegisterEvents();
 
-            Log.Debug("Exiled.Plugin.Template has been enabled.");
+            Log.Debug($"{base.Name} has been enabled.");
             base.OnEnabled();
         }
 
@@ -30,7 +30,7 @@ namespace Exiled.Plugin.Template
             Instance = null;
             UnregisterEvents();
 
-            Log.Debug("Exiled.Plugin.Template has been disabled.");
+            Log.Debug($"{base.Name} has been disabled.");
             base.OnDisabled();
         }
 
